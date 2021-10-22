@@ -1,0 +1,195 @@
+/*sets the body margin so web page has a neat look inside the browser (centered)
+1)fontfamily used in the body is Indie Flower*/
+body{
+
+  font-family: 'Indie Flower', cursive;
+  margin-top: 0px;
+  margin-right:20%;
+  margin-left:50px;
+  background-color:antiquewhite;
+}
+.container{
+  border: solid 4px burlywood;
+  display:grid;
+  width:700px;
+  margin-left: 200px;
+  margin-top:200px;
+}
+.left{
+  width:260px;
+  margin-top:200px;
+  grid-column-start: 1;
+  grid-column-end:1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.right{
+  width:50px;
+ 
+  margin-top:280px;
+  grid-column-start: 4;
+  grid-column-end:4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+#tyrannosaurus{
+  transform:rotateY(180deg);
+  width:300px;
+}
+#egg{
+  width:50px;
+}
+.centerleft{
+  margin-left:0px;
+  border:solid 3px black;
+ 
+  margin-top:170px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+   width: 100px;
+      height: 200px;
+      background: rgb(218, 218, 218);
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+   .centerleft:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 35px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 26px solid rgb(185, 185, 185);
+      border-bottom: 1px solid transparent;
+    }
+    .centerright{
+      border:solid 3px black;
+      
+  margin-top:240px;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+   width: 120px;
+      height: 130px;
+      background: rgb(218, 218, 218);
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+   .centerright:before {
+      content: "";
+      position: absolute;
+      right: -20%;
+      top: 35px;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-left: 26px solid rgb(185, 185, 185);
+      border-bottom: 1px solid transparent;
+    }
+
+
+@media only screen and (max-width: 600px){
+
+body{
+
+  font-family: 'Indie Flower', cursive;
+  margin-top: 0px;
+  margin-right:0px;
+  margin-left:0px;
+  background-color:antiquewhite;
+}
+.container{
+  border: solid 4px burlywood;
+  display:grid;
+  width:98%;
+  margin-left:0px;
+  margin-top:0px;
+}
+.left{
+  grid-column-start: 1;
+  grid-column-end:1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.right{
+  grid-column-start: 2;
+  grid-column-end:2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+#tyrannosaurus{
+  transform:rotateY(180deg);
+  width:300px;
+}
+#egg{
+  width:50px;
+}
+.centerleft{
+  margin-top:20px;
+
+  margin-left:60px;
+  border:solid 3px black;
+ 
+  
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+   width: 100px;
+      height: 200px;
+      background: rgb(218, 218, 218);
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+   .centerleft:before {
+      content: "";
+      position: absolute;
+      right: 40%;
+      top: 200px;
+      width: 0;
+      height: 0;
+      border-top: 1px solid transparent;
+      border-right: 20px solid rgb(185, 185, 185);
+      border-bottom: 160px solid transparent;
+    }
+    .centerright{
+      margin-top:20px;
+      border:solid 3px black;
+      
+  
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+   width: 120px;
+      height: 130px;
+      background: rgb(218, 218, 218);
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+   .centerright:before {
+      content: "";
+      position: absolute;
+      right: 50%;
+      top: 130px;
+      width: 0;
+      height: 0;
+      border-top: 1px solid transparent;
+      border-left: 20px solid rgb(185, 185, 185);
+      border-bottom: 149px solid transparent;
+    }
+
+}
+

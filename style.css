@@ -1,0 +1,157 @@
+
+/*sets the body margin so web page has a neat look inside the browser (centered)
+1)fontfamily used in the body is Indie Flower*/
+body{
+  font-family: 'Indie Flower', cursive;
+  margin-top: 0px;
+  margin-right:400px;
+  margin-left:400px;
+  background-color:antiquewhite;
+}
+
+#egg{
+  width:300px;
+  display:inline-block;
+}
+
+#about,#author,#wiki,#whydinos{
+  text-decoration: none;
+  border: solid 2px white;
+  padding:2px;
+}
+/*ul style sets the menu properties: */
+ul{
+  list-style:none;
+  margin:0px;
+  margin-left: -20px;
+  margin-right:20px;
+  white-space: nowrap;
+}
+/*fontfamily is Comfortaa*/
+li{font-family: 'Comfortaa', cursive;
+ 
+ 
+  display:inline-block;
+
+}
+#picture{
+  width:100px;
+}
+.container{
+  text-align:center;
+  display:grid;
+}
+.menu{
+  background-color: bisque;
+ text-align:center;
+ 
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.circle{
+  margin-top:30px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+   width: 120px;
+      height: 90px;
+      background: rgb(218, 218, 218);
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+   .circle:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 35px;
+       width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 26px solid rgb(185, 185, 185);
+      border-bottom: 1px solid transparent;
+    }
+  
+
+.left{
+  background-color: rgb(255, 255, 255);
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.right{
+  padding:10px;
+  background-color: darksalmon;
+  width:200px;
+  grid-column-start: 6;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.center{
+  background-color: rgb(241, 241, 241);
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+@media only screen and (max-width: 600px){
+  #egg{
+    margin-top:100px;
+    width:140px;
+  }
+  .center{
+    background-color: darkseagreen;
+  }
+  body{
+    margin-right:0px;
+  margin-left:0px;
+  }
+  .center{
+
+  background-color: rgb(241, 241, 241);
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.circle{
+  margin-top:90px;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 4;
+   width: 120px;
+      height: 90px;
+      background: rgb(218, 218, 218);
+      position: relative;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+    }
+   .circle:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 35px;
+       width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 26px solid rgb(185, 185, 185);
+      border-bottom: 1px solid transparent;
+    }
+    .right{
+  padding:10px;
+  background-color: darksalmon;
+  width:96%;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+}
